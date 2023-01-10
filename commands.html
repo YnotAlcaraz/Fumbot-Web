@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+        <link rel="icon" href="/Img/pfp.PNG">
+        <script src="/JavaScript/Script.js"></script>
+        <title>Commands - Fumbot</title>
+    </head>
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="/Img/pfp.PNG" alt="logo" class="header__logo__img">
+            </a>
+            <a href="index.html">
+                <div class="header__logo__name">Fumbot</div>
+            </a>
+        </div>
+        <div class="header__hamburger" onclick="menu()">
+            <img src="/Img/lines.png" class="header__hamburger__lines" alt="lines">
+        </div>
+        <div class="header__navbar">
+            <ul class="header__navbar__menu">
+                <li class="header__navbar__menu__elem"><a href="index.html" class="header__navbar__menu__elem__link">Home</a></li>
+                <li class="header__navbar__menu__elem"><a href="commands.html" class="header__navbar__menu__elem__link">Commands</a></li>
+                <li class="header__navbar__menu__elem"><a href="support.php" class="header__navbar__menu__elem__link">Support</a></li>
+            </ul>
+        </div>
+    </header> 
+     
+    <div class="contenedor">
+        <br><br><br>
+        <h1 class="header">Commands</h1>
+        <hr>
+        <h2 class="contenedor__comando">Help</h2>
+        <p class="contenedor__descomando">
+            Shows you the list of commands and how they work.<br><br>
+            <b>Syntax:</b><br>
+            <span class="comando">/help</span>
+        </p>
+        <h2 class="contenedor__comando">Avatar</h2>
+        <p class="contenedor__descomando">
+            Displays your or another user's avatar. <br><br>
+            <b>Syntax:</b><br>
+            <ul class="contenedor__descomando__lista">
+                <li>To get your own avatar.</li>
+                <li><span class="comando">/avatar</span></li><br>
+                <li>To get another user's avatar.</li>
+                <li><span class="comando">/avatar [user]</span></li>
+            </ul>
+        </p>
+        <h2 class="contenedor__comando">Warn</h2>
+        <p class="contenedor__descomando">
+            Warns a user and gives them an infraction.<br>
+            Also returns their total number of infractions.<br><br>
+            <b>Syntax:</b><br>
+            <ul class="contenedor__descomando__lista">
+                <li>To warn a user without a reason.</li>
+                <li><span class="comando">/warn [user]</span></li>
+                <li>To warn a user with a reason.</li>
+                <li><span class="comando">/warn [user] [reason]</span></li>
+            </ul>
+        </p>
+        <h2 class="contenedor__comando">Timeout</h2>
+        <p class="contenedor__descomando">
+            Mutes a user for the selected ammount of time (1 minute, 1 hour, 1 day) and gives them an infraction.<br>
+            Also returns their total number of infractions.<br><br>
+            <b>Syntax:</b><br>
+            <ul class="contenedor__descomando__lista">
+                <li>To timeout a user without a reason.</li>
+                <li><span class="comando">/timeout [user] [1m/1h/1d]</span></li>
+                <li>To timeout a user with a reason.</li>
+                <li><span class="comando">/timeout [user] [1m/1h/1d] [reason]</span></li>
+            </ul>
+        </p>
+        <h2 class="contenedor__comando">Kick</h2>
+        <p class="contenedor__descomando">
+            Kicks a user from the server.<br><br>
+            <b>Syntax:</b> <br>
+            <ul class="contenedor__descomando__lista">
+                <li>To kick a user without a reason.</li>
+                <li><span class="comando">/kick [user]</span></li>
+                <li>To kick a user with a reason.</li>
+                <li><span class="comando">/kick [user] [reason]</span></li>
+            </ul>
+        </p>
+        <h2 class="contenedor__comando">Ban</h2>
+        <p class="contenedor__descomando">
+            Bans a user from the server.<br><br>
+            <b>Syntax:</b><br>
+            <ul class="contenedor__descomando__lista">
+                <li>To ban a user without a reason.</li>
+                <li><span class="comando">/ban [user]</span></li>
+                <li>To kick a user with a reason.</li>
+                <li><span class="comando">/kick [user] [reason]</span></li>
+            </ul>
+        </p>
+        <h2 class="contenedor__comando">Prune</h2>
+        <p class="contenedor__descomando">
+            Deletes up to 99 messages from the current channel.<br><br>
+            <b>Syntax:</b><br>
+            <span class="comando">/prune [amount]</span>
+        </p>
+    </div>
+    <br><br>
+    <div id="footer">
+        <p id="footer__text">
+            Confirmation prompt is still WIP.<br>
+            Please be carefull while executing commands
+        </p>
+    </div><!--footer-->
+</body>
+</html>

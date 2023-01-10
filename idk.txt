@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css ">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <img src="/Img/pfp.PNG" alt="logo" class="header__logo__img">
+            <div class="header__logo__name">Fumbot</div>
+        </div>
+        <div class="header__hamburger" onclick="menu()">
+            <img src="/Img/lines.png" class="header__hamburger__lines" alt="lines">
+        </div>
+        <div class="header__navbar">
+            <ul class="header__navbar__menu">
+                <li class="header__navbar__menu__elem"><a href="#" class="header__navbar__menu__elem__link">Home</a></li>
+                <li class="header__navbar__menu__elem"><a href="#" class="header__navbar__menu__elem__link">Commands</a></li>
+                <li class="header__navbar__menu__elem"><a href="#" class="header__navbar__menu__elem__link">Support</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        function menu(){
+            navBar = document.querySelector(".header__navbar");
+            navBar.classList.toggle("active")
+        }
+        /*hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".prueba__navbar");
+            navBar.classList.toogle("active")
+        }
+        hamburger.addEventListener("click");*/
+    </script>
+</body>
+</html>
+
+<!--
+        <div id="navbar">
+        <div id="navbar__datos">
+            <img src="Img/pfp.PNG" alt="Logo" id="navbar__datos__img">
+            <div id="navbar__datos__nombre">Fumbot</div>
+        </div>
+        <div id="navbar__menu">
+            <a href="index.html"><button class="navbar__menu__item">Home</button></a>
+            <a href="commands.html"><button class="navbar__menu__item">Commands</button></a>
+            <a href="support.html"><button class="navbar__menu__item">Support</button></a>
+        </div>
+    </div>
+-->
+
+/*
+#navbar{
+    background-color: #2c2f33;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    flex-wrap: wrap;
+}
+
+#navbar__datos{
+    display: flex;
+    align-items: center;
+}
+
+#navbar__datos__img{
+    width: 50px;
+}
+
+#navbar__datos__nombre{
+    padding-left: 29px;
+    padding-right: 29px;
+    font-size: 23px;
+}
+
+#navbar__menu{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__menu__item{
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 9px;
+    background-color: #2c2f33;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    transition: background-color 0.5s;
+}
+
+.navbar__menu__item:hover{
+    background-color: #7289da;
+    cursor: pointer;
+}
+*/

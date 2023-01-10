@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+    <link rel="icon" href="/Img/pfp.PNG">
+    <script src="/JavaScript/Script.js"></script>
+    <title>Home - Fumbot</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="/Img/pfp.PNG" alt="logo" class="header__logo__img">
+            </a>
+            <a href="index.html">
+                <div class="header__logo__name">Fumbot</div>
+            </a>
+        </div>
+        <div class="header__hamburger" onclick="menu()">
+            <img src="/Img/lines.png" class="header__hamburger__lines" alt="lines">
+        </div>
+        <div class="header__navbar">
+            <ul class="header__navbar__menu">
+                <li class="header__navbar__menu__elem"><a href="index.html" class="header__navbar__menu__elem__link">Home</a></li>
+                <li class="header__navbar__menu__elem"><a href="commands.html" class="header__navbar__menu__elem__link">Commands</a></li>
+                <li class="header__navbar__menu__elem"><a href="support.php" class="header__navbar__menu__elem__link">Support</a></li>
+            </ul>
+        </div>
+    </header>    
+
+    <div id="cuerpo">
+        <div class="cuerpo__cont">
+            <h1 class="heading">Fumbot</h1>
+            <hr>
+            <p class="cuerpo__cont__texto">The least useful bot around here</p>
+            <br>
+            <div id="cuerpo__cont__botones">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=1056437000019910666&permissions=8&scope=bot%20applications.commands"><button class="boton">Invite</button></a>
+                <a href="https://discord.gg/cRdAkkxnaR"><button class="boton">Join Server</button></a>
+            </div><!--cuerpo__cont__botones-->
+        </div><!--cuerpo__cont-->
+        <div class="cuerpo__cont">
+            <img src="Img/pfp.PNG" alt="pfp" id="cuerpo__cont__img">
+        </div><!--cuerpo__cont-->
+    </div><!--cuerpo-->
+    <div id="footer">
+        <p id="footer__text">
+            Confirmation prompt is still WIP. <br>
+            Please be carefull while executing commands
+        </p>
+    </div><!--footer-->
+</body>
+</html>
